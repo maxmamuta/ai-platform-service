@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "npx tsc",
+    "lint": "eslint .",
     "start:api": "node dist/api/index.js",
     "start:worker": "node dist/worker/index.js",
     "start:core": "node packages/core/dist/index.js"
@@ -14,6 +15,13 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2",
+    "globals": "^17.3.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  },
+  "dependencies": {
+    "jiti": "^2.6.1"
   }
 }
