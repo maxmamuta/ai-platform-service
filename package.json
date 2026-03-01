@@ -20,7 +20,10 @@
     "dev:core": "pnpm --dir packages/core run dev",
     "start:api": "node dist/api/index.js",
     "start:worker": "node dist/worker/index.js",
-    "start:core": "node packages/core/dist/index.js"
+    "start:core": "node packages/core/dist/index.js",
+    "compose:dev:up": "docker compose --profile dev up --build --detach",
+    "compose:prod:up": "docker compose --profile prod up --build --detach",
+    "compose:down": "docker compose down"
   },
   "keywords": [],
   "author": "",
